@@ -46,6 +46,14 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Sitecore.Kernel, Version=15.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\Sitecore.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -113,14 +121,56 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Assets\css\animate.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\flaticon.css" />
+    <Content Include="Assets\css\font-awesome.min.css" />
+    <Content Include="Assets\css\gijgo.css" />
+    <Content Include="Assets\css\magnific-popup.css" />
+    <Content Include="Assets\css\nice-select.css" />
+    <Content Include="Assets\css\owl.carousel.min.css" />
+    <Content Include="Assets\css\slick.css" />
+    <Content Include="Assets\css\slicknav.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\css\theme-default.css" />
+    <Content Include="Assets\css\themify-icons.css" />
+    <Content Include="Assets\fonts\fa-brands-400.svg" />
+    <Content Include="Assets\fonts\fa-regular-400.svg" />
+    <Content Include="Assets\fonts\fa-solid-900.svg" />
+    <Content Include="Assets\fonts\flaticon.css" />
+    <Content Include="Assets\fonts\Flaticon.svg" />
+    <Content Include="Assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\fonts\gijgo-material.svg" />
+    <Content Include="Assets\fonts\themify.svg" />
+    <Content Include="Assets\js\ajax-form.js" />
+    <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\contact.js" />
+    <Content Include="Assets\js\gijgo.min.js" />
+    <Content Include="Assets\js\imagesloaded.pkgd.min.js" />
+    <Content Include="Assets\js\isotope.pkgd.min.js" />
+    <Content Include="Assets\js\jquery.ajaxchimp.min.js" />
+    <Content Include="Assets\js\jquery.counterup.min.js" />
+    <Content Include="Assets\js\jquery.form.js" />
+    <Content Include="Assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="Assets\js\jquery.scrollUp.min.js" />
+    <Content Include="Assets\js\jquery.slicknav.min.js" />
+    <Content Include="Assets\js\jquery.validate.min.js" />
+    <Content Include="Assets\js\mail-script.js" />
+    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\js\nice-select.min.js" />
+    <Content Include="Assets\js\owl.carousel.min.js" />
+    <Content Include="Assets\js\plugins.js" />
+    <Content Include="Assets\js\popper.min.js" />
+    <Content Include="Assets\js\scrollIt.js" />
+    <Content Include="Assets\js\slick.min.js" />
+    <Content Include="Assets\js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="Assets\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Assets\js\waypoints.min.js" />
+    <Content Include="Assets\js\wow.min.js" />
+    <Content Include="Libraries\Sitecore.Kernel.dll" />
+    <Content Include="Libraries\Sitecore.Mvc.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RouteConfig.vb" />
-    <Compile Include="Global.asax.vb">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -150,6 +200,35 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\style.map" />
+    <Content Include="Assets\css\theme-default.map" />
+    <Content Include="Assets\fonts\fa-brands-400.eot" />
+    <Content Include="Assets\fonts\fa-brands-400.ttf" />
+    <Content Include="Assets\fonts\fa-brands-400.woff" />
+    <Content Include="Assets\fonts\fa-brands-400.woff2" />
+    <Content Include="Assets\fonts\fa-regular-400.eot" />
+    <Content Include="Assets\fonts\fa-regular-400.ttf" />
+    <Content Include="Assets\fonts\fa-regular-400.woff" />
+    <Content Include="Assets\fonts\fa-regular-400.woff2" />
+    <Content Include="Assets\fonts\fa-solid-900.eot" />
+    <Content Include="Assets\fonts\fa-solid-900.ttf" />
+    <Content Include="Assets\fonts\fa-solid-900.woff" />
+    <Content Include="Assets\fonts\fa-solid-900.woff2" />
+    <Content Include="Assets\fonts\Flaticon.eot" />
+    <Content Include="Assets\fonts\Flaticon.ttf" />
+    <Content Include="Assets\fonts\Flaticon.woff" />
+    <Content Include="Assets\fonts\Flaticon.woff2" />
+    <Content Include="Assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\fonts\FontAwesome.otf" />
+    <Content Include="Assets\fonts\gijgo-material.eot" />
+    <Content Include="Assets\fonts\gijgo-material.ttf" />
+    <Content Include="Assets\fonts\gijgo-material.woff" />
+    <Content Include="Assets\fonts\themify.eot" />
+    <Content Include="Assets\fonts\themify.ttf" />
+    <Content Include="Assets\fonts\themify.woff" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -161,11 +240,14 @@
     </None>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <Content Include="web.config" />
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Main.vbhtml" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
