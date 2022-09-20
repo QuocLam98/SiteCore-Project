@@ -167,6 +167,7 @@
     <Content Include="Assets\js\vendor\modernizr-3.5.0.min.js" />
     <Content Include="Assets\js\waypoints.min.js" />
     <Content Include="Assets\js\wow.min.js" />
+    <Content Include="Content\Site.css" />
     <Content Include="Libraries\Sitecore.Kernel.dll" />
     <Content Include="Libraries\Sitecore.Mvc.dll" />
   </ItemGroup>
@@ -241,8 +242,7 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="web.config" />
-    <Content Include="Views\_ViewStart.vbhtml" />
-    <Content Include="Views\Main.vbhtml" />
+    <None Include="Views\Main.vbhtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
