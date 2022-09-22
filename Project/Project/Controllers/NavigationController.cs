@@ -21,7 +21,7 @@ namespace Project.Controllers
             //Get the list of Navigation Items from the datasource
             List<Item> navigationItems = dataSource.GetChildren().ToList();
             //Pass the list of Items as a Model to the View
-            return View("/ Views / Navigation.cshtml", navigationItems);
+            return View("/Views/Navigation.cshtml", navigationItems);
         }
     }
 }
