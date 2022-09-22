@@ -240,8 +240,11 @@
     <None Include="packages.config" />
     <Content Include="Views\Main.cshtml" />
     <Content Include="Views\Header.cshtml" />
-    <Content Include="Views\Navigation.cshtml" />
+    <Content Include="Views\Header_Navigation.cshtml" />
     <Content Include="Web.config" />
+    <Content Include="Views\Footer.cshtml" />
+    <Content Include="Views\Footer_Navigation.cshtml" />
+    <Content Include="Views\Social_Media.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -21,7 +21,20 @@ namespace Project.Controllers
             //Get the list of Navigation Items from the datasource
             List<Item> navigationItems = dataSource.GetChildren().ToList();
             //Pass the list of Items as a Model to the View
-            return View("/Views/Navigation.cshtml", navigationItems);
+            return View("/Views/Header_Navigation.cshtml", navigationItems);
+        }
+
+        public ActionResult FooterNav()
+        {
+            //Get the current DB
+            Database currentDb = Sitecore.Context.Database;
+            //Get the datasource
+            string dataSourcePath = RenderingContext.Current.Rendering.DataSource;
+            Item dataSource = currentDb.GetItem("{C9A25C5E-FA60-40E6-A13C-4A4CFA55D27F}");
+            //Get the list of Navigation Items from the datasource
+            List<Item> navigationItems = dataSource.GetChildren().ToList();
+            //Pass the list of Items as a Model to the View
+            return View("/Views/Footer_Navigation.cshtml", navigationItems);
         }
     }
 }

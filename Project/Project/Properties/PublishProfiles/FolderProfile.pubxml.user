@@ -4,7 +4,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <History>True|2022-09-22T11:07:52.5653216Z;True|2022-09-22T18:06:10.9096561+07:00;True|2022-09-22T17:52:13.8189389+07:00;True|2022-09-22T17:51:13.6822677+07:00;True|2022-09-22T17:50:02.4234742+07:00;True|2022-09-22T17:41:05.4092447+07:00;True|2022-09-22T17:31:10.7311410+07:00;True|2022-09-22T16:01:34.1748841+07:00;True|2022-09-22T15:37:41.8516716+07:00;True|2022-09-22T15:34:57.6137259+07:00;True|2022-09-22T15:32:41.8653107+07:00;True|2022-09-22T15:31:21.0677143+07:00;True|2022-09-22T15:29:44.9554226+07:00;True|2022-09-22T15:24:00.8947420+07:00;False|2022-09-22T15:20:59.6782475+07:00;False|2022-09-22T13:50:14.1695945+07:00;False|2022-09-22T13:49:55.4759765+07:00;False|2022-09-21T18:11:17.9832076+07:00;False|2022-09-21T18:06:01.2556000+07:00;False|2022-09-21T18:05:43.9590662+07:00;False|2022-09-21T17:54:40.7490190+07:00;False|2022-09-21T17:53:56.5075389+07:00;</History>
+    <History>True|2022-09-22T11:57:50.0496581Z;True|2022-09-22T18:49:56.3793705+07:00;True|2022-09-22T18:34:52.9526667+07:00;True|2022-09-22T18:13:30.2472743+07:00;True|2022-09-22T18:11:58.3906976+07:00;True|2022-09-22T18:07:52.5653216+07:00;True|2022-09-22T18:06:10.9096561+07:00;True|2022-09-22T17:52:13.8189389+07:00;True|2022-09-22T17:51:13.6822677+07:00;True|2022-09-22T17:50:02.4234742+07:00;True|2022-09-22T17:41:05.4092447+07:00;True|2022-09-22T17:31:10.7311410+07:00;True|2022-09-22T16:01:34.1748841+07:00;True|2022-09-22T15:37:41.8516716+07:00;True|2022-09-22T15:34:57.6137259+07:00;True|2022-09-22T15:32:41.8653107+07:00;True|2022-09-22T15:31:21.0677143+07:00;True|2022-09-22T15:29:44.9554226+07:00;True|2022-09-22T15:24:00.8947420+07:00;False|2022-09-22T15:20:59.6782475+07:00;False|2022-09-22T13:50:14.1695945+07:00;False|2022-09-22T13:49:55.4759765+07:00;False|2022-09-21T18:11:17.9832076+07:00;False|2022-09-21T18:06:01.2556000+07:00;False|2022-09-21T18:05:43.9590662+07:00;False|2022-09-21T17:54:40.7490190+07:00;False|2022-09-21T17:53:56.5075389+07:00;</History>
     <_PublishTargetUrl>C:\inetpub\wwwroot\storefront100.sc</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
@@ -234,7 +234,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/21/2022 17:50:17</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>07/09/2020 04:52:58</publishTime>
+      <publishTime>09/07/2020 04:52:58</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/25/2012 18:48:56</publishTime>
@@ -243,10 +243,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/18/2021 03:03:36</publishTime>
     </File>
     <File Include="bin/Project.dll">
-      <publishTime>09/22/2022 16:01:27</publishTime>
+      <publishTime>09/22/2022 18:49:56</publishTime>
     </File>
     <File Include="bin/Project.pdb">
-      <publishTime>09/22/2022 16:01:27</publishTime>
+      <publishTime>09/22/2022 18:49:56</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>05/19/2020 08:51:56</publishTime>
@@ -288,10 +288,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/19/2020 08:40:20</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>12/05/2017 08:36:44</publishTime>
+      <publishTime>05/12/2017 08:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>12/05/2017 08:36:44</publishTime>
+      <publishTime>05/12/2017 08:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
       <publishTime>05/19/2020 08:40:20</publishTime>
@@ -374,14 +374,23 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Libraries/Sitecore.Mvc.dll">
       <publishTime>09/21/2022 17:47:50</publishTime>
     </File>
+    <File Include="Views/Footer.cshtml">
+      <publishTime>09/22/2022 18:46:31</publishTime>
+    </File>
+    <File Include="Views/Footer_Navigation.cshtml">
+      <publishTime>09/22/2022 18:57:41</publishTime>
+    </File>
     <File Include="Views/Header.cshtml">
       <publishTime>09/22/2022 15:04:42</publishTime>
     </File>
+    <File Include="Views/Header_Navigation.cshtml">
+      <publishTime>09/22/2022 18:42:01</publishTime>
+    </File>
     <File Include="Views/Main.cshtml">
-      <publishTime>09/22/2022 15:05:15</publishTime>
+      <publishTime>09/22/2022 18:33:18</publishTime>
     </File>
     <File Include="Views/Navigation.cshtml">
-      <publishTime>09/22/2022 18:07:34</publishTime>
+      <publishTime>09/22/2022 18:13:24</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>09/21/2022 17:45:39</publishTime>

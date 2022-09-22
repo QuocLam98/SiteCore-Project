@@ -1,0 +1,28 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Data
+@using Sitecore.Data.Items
+
+@{
+    Database currentDb = Sitecore.Context.Database; //Extract the current Db
+    Item homeItem = currentDb.GetItem("{3069770B-30C3-41A4-A68C-B5052B3C100E}"); //Get the item /sitecore/content/Home
+}
+
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            @Html.Sitecore().Rendering("{E29B6C65-65E4-46B4-9A0E-1801BBE72C34}")
+        </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+                        @Html.Sitecore().Field("Footer", homeItem)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

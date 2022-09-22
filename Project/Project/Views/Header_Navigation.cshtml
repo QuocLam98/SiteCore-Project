@@ -40,7 +40,7 @@
                                                 text = @Html.Sitecore().Field(
                                             "Title", menuItem) + "<i class=\"ti-angle-down\"></i>"
                                             })
-                                            <ul class=”submenu”>
+                                            <ul class="submenu">
                                                 @foreach (Item childMenuItem in menuItem.GetChildren())
                                                 {
                                                     <li>
