@@ -1,0 +1,46 @@
+﻿@using Sitecore
+@using Sitecore.Mvc
+@using Sitecore.Data
+@using Sitecore.Data.Items
+@using Sitecore.Data.Items
+@using Sitecore.Data.Fields
+
+@{
+    //Extract the current Db
+    Database currentDb = Sitecore.Context.Database;
+    //Get the item /sitecore/content/Home/About
+    Item aboutItem = currentDb.GetItem("{FDC9BE58-BC90-441B-A4C2-5DFC7E1F4F9D}");
+
+}
+
+
+
+<!-- chose_area  -->
+<div class="chose_area" ">
+    <div class="container">
+        <div class="features_main_wrap">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-5 col-md-6">
+                    <div class="about_image">
+                        @Html.Sitecore().Field("Image", aboutItem)
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="features_info">
+                        <h3>@Html.Sitecore().Field("Title", aboutItem)</h3>
+                        @Html.Sitecore().Field("Summary", aboutItem)
+                        <div class="about_btn">
+                            @Html.Sitecore().Field("Link", aboutItem, new
+                            {
+                            text = @Html.Sitecore().Field("Text"
+                            , aboutItem),
+                            @class = "boxed-btn3-line"
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ chose_area  -->

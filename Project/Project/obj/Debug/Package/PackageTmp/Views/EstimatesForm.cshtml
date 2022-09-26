@@ -1,0 +1,107 @@
+﻿@using Sitecore
+@using Sitecore.Mvc
+@using Sitecore.Data
+@using Sitecore.Data.Items
+
+@{
+    Database currentDb = Sitecore.Context.Database; //Extract the current Db
+                                                    //Get the item /sitecore/content/Global/Delivery Cities
+    Item deliveryCitiesItem = currentDb.GetItem("{302B8F7E-135D-4E91-AF34-B9EA5F54F572}");
+    //Get the item /sitecore/content/Global/Departure Cities
+    Item departureCitiesItem = currentDb.GetItem("{7258A428-77B7-4A42-B568-539AD7C89581}");
+    //Get the item /sitecore/content/Global/Product Sizes
+    Item productSizesItem = currentDb.GetItem("{003AB924-F510-40DB-B5FD-BCF3663341B6}");
+    //Get the item /sitecore/content/Global/Product Types
+    Item productTypesItem = currentDb.GetItem("{589B40ED-4B37-424F-8712-D144E64FE683}");
+
+    //Get the Summary Item
+    Item estimationSummaryItem = currentDb.GetItem("{7203A629-AF81-4E0E-B7A2-B708DE6B61B3}");
+}
+
+
+<!-- Estimate_area start  -->
+<div class="Estimate_area overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-5">
+                <div class="Estimate_info">
+                    <h3>@Sitecore.Globalization.Translate.Text("GetFreeEstimates")</h3>
+                    @Html.Sitecore().Field("Summary", estimationSummaryItem)
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-7">
+                <div class="form">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="input_field">
+                                    <input type="@Sitecore.Globalization.Translate.Text("YourName")" placeholder="@Sitecore.Globalization.Translate.Text("YourName")">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input_field">
+                                    <input type="@Sitecore.Globalization.Translate.Text("Email")" placeholder="@Sitecore.Globalization.Translate.Text("Email")">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input_field">
+                                    <select class="wide">
+                                        <option data-display="@Sitecore.Globalization.Translate.Text("ProductType")">@Sitecore.Globalization.Translate.Text("ProductType")</option>
+                                        @foreach (Item item in productTypesItem.GetChildren())
+                                        {
+                                            <option value="@item.Fields["Text"]">@item.Fields["Value"]</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input_field">
+                                    <select class="wide">
+                                        <option data-display="@Sitecore.Globalization.Translate.Text("ProductSize")">@Sitecore.Globalization.Translate.Text("ProductSize")</option>
+                                        @foreach (Item item in productTypesItem.GetChildren())
+                                        {
+                                            <option value="@item.Fields["Text"]">@item.Fields["Value"]</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input_field">
+                                    <select class="wide">
+                                        <option data-display="@Sitecore.Globalization.Translate.Text("DepartureCity")">@Sitecore.Globalization.Translate.Text("DepartureCity")</option>
+                                        @foreach (Item item in productTypesItem.GetChildren())
+                                        {
+                                            <option value="@item.Fields["Text"]">@item.Fields["Value"]</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input_field">
+                                    <select class="wide">
+                                        <option data-display="@Sitecore.Globalization.Translate.Text("DeliveryCity")">@Sitecore.Globalization.Translate.Text("DeliveryCity")</option>
+                                        @foreach (Item item in productTypesItem.GetChildren())
+                                        {
+                                            <option value="@item.Fields["Text"]">@item.Fields["Value"]</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="input_field">
+                                    <textarea placeholder="@Sitecore.Globalization.Translate.Text("Message")"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="input_field">
+                                    <button class="boxed-btn3-line" type="submit">@Sitecore.Globalization.Translate.Text("SendEstimates")</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Estimate_area end  -->

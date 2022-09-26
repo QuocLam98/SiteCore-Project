@@ -1,5 +1,13 @@
 ﻿@using Sitecore.Mvc
+@using Sitecore.Data
+@using Sitecore.Data.Items
 
+@{
+    Database currentDb = Sitecore.Context.Database; //Extract the current Db
+    Item homeItem = currentDb.GetItem("{3069770B-30C3-41A4-A68C-B5052B3C100E}"); //Get the item /sitecore/content/Home
+    Item locationItem1 = currentDb.GetItem("{9C40B82B-7555-4AAD-835D-96868618A5EE}");
+    Item locationItem2 = currentDb.GetItem("{34766A09-EA84-4DE0-BA45-182E43BA9FA2}");
+}
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -37,131 +45,18 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <!-- header-start -->
-    @Html.Sitecore().Rendering("{591644EF-9826-46EF-B32E-3F012614094F}");
+    @Html.Sitecore().Rendering("{591644EF-9826-46EF-B32E-3F012614094F}")
 
-    @Html.Sitecore().Placeholder("Main");
+    @Html.Sitecore().Placeholder("main")
+
+    @Html.Sitecore().Rendering("{9207353A-C5D8-41B0-BE90-EDFEE4AF00E8}")
+
+
+
+    @Html.Sitecore().Rendering("{33EB8F3F-F554-4DA0-90FA-25ABBE054C7D}")
     <!-- header-end -->
-    <!-- slider_area_start -->
-    @*<div class="slider_area">
-            <div class="single_slider  d-flex align-items-center slider_bg_1">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-8">
-                            <div class="slider_text text-center justify-content-center">
-                                <p>For Personal & Business</p>
-                                <h3>
-                                    Global Logistic Service
-                                    For Business
-                                </h3>
-                                <a class="boxed-btn3" href="service.html">Our Services</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
-    <!-- slider_area_end -->
-    @*<div class="transportaion_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_transport">
-                            <div class="icon">
-                                <img src="img/svg_icon/airplane.png" alt="">
-                            </div>
-                            <h3>Transportation</h3>
-                            <p>
-                                Esteem spirit temper too say adieus who direct esteem. It look estee luckily or picture
-                                placing drawing.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_transport">
-                            <div class="icon">
-                                <img src="img/svg_icon/live.png" alt="">
-                            </div>
-                            <h3>Live Monitoring</h3>
-                            <p>
-                                Esteem spirit temper too say adieus who direct esteem. It look estee luckily or picture
-                                placing drawing.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_transport">
-                            <div class="icon">
-                                <img src="img/svg_icon/world.png" alt="">
-                            </div>
-                            <h3>Worldwide Service</h3>
-                            <p>
-                                Esteem spirit temper too say adieus who direct esteem. It look estee luckily or picture
-                                placing drawing.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="service_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section_title mb-50 text-center">
-                            <h3>
-                                Services We Offer
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="service_active owl-carousel">
-                            <div class="single_service">
-                                <div class="thumb">
-                                    <img src="img/service/1.png" alt="">
-                                </div>
-                                <div class="service_info">
-                                    <h3><a href="service_details.html">Ocean Freight</a></h3>
-                                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                                </div>
-                            </div>
-                            <div class="single_service">
-                                <div class="thumb">
-                                    <img src="img/service/2.png" alt="">
-                                </div>
-                                <div class="service_info">
-                                    <h3><a href="service_details.html">Land Transport</a></h3>
-                                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                                </div>
-                            </div>
-                            <div class="single_service">
-                                <div class="thumb">
-                                    <img src="img/service/3.png" alt="">
-                                </div>
-                                <div class="service_info">
-                                    <h3><a href="service_details.html">Air Freight</a></h3>
-                                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                                </div>
-                            </div>
-                            <div class="single_service">
-                                <div class="thumb">
-                                    <img src="img/service/1.png" alt="">
-                                </div>
-                                <div class="service_info">
-                                    <h3><a href="service_details.html">Ocean Freight</a></h3>
-                                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
-
     <!-- contact_action_area  -->
-    @Html.Sitecore().Rendering("")
+    @Html.Sitecore().Rendering("{EC44664D-1E7A-434B-B0FD-2A5A814D4EED}")
 
     @Html.Sitecore().Rendering("{607249F3-8846-4CF5-AD0E-9BB7E34EF8EE}")
     <!-- /contact_action_area  -->
@@ -197,109 +92,13 @@
             </div>
         </div>*@
     <!--/ chose_area  -->
-    <!-- counter_area  -->
-    @*<div class="counter_area">
-            <div class="container">
-                <div class="offcan_bg">
-                    <div class="row">
-                        <div class="col-xl-3 col-md-3">
-                            <div class="single_counter text-center">
-                                <h3> <span class="counter">42</span> <span>+</span> </h3>
-                                <p>Countries Covered</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-3">
-                            <div class="single_counter text-center">
-                                <h3> <span class="counter">97</span> <span>+</span> </h3>
-                                <p>Business Success</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-3">
-                            <div class="single_counter text-center">
-                                <h3> <span class="counter">2342</span></h3>
-                                <p>Happy Client</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-3">
-                            <div class="single_counter text-center">
-                                <h3> <span class="counter">3245</span></h3>
-                                <p>Business Done</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    @Html.Sitecore().Rendering("{E9D80C9D-0CBF-41EC-B782-B6BE485D6A73}")
 
-            </div>
-        </div>*@
-    <!-- /counter_area  -->
-    <!-- testimonial_area  -->
-    @*<div class="testimonial_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7">
-                        <div class="testmonial_active owl-carousel">
-                            <div class="single_carousel">
-                                <div class="single_testmonial text-center">
-                                    <div class="quote">
-                                        <img src="img/svg_icon/quote.svg" alt="">
-                                    </div>
-                                    <p>
-                                        Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor sollicitudin.
-                                        Pellentesque id dolor tempor sapien feugiat ultrices.
-                                    </p>
-                                    <div class="testmonial_author">
-                                        <div class="thumb">
-                                            <img src="img/case/testmonial.png" alt="">
-                                        </div>
-                                        <h3>Robert Thomson</h3>
-                                        <span>Business Owner</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single_carousel">
-                                <div class="single_testmonial text-center">
-                                    <div class="quote">
-                                        <img src="img/svg_icon/quote.svg" alt="">
-                                    </div>
-                                    <p>
-                                        Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor sollicitudin.
-                                        Pellentesque id dolor tempor sapien feugiat ultrices.
-                                    </p>
-                                    <div class="testmonial_author">
-                                        <div class="thumb">
-                                            <img src="img/case/testmonial.png" alt="">
-                                        </div>
-                                        <h3>Robert Thomson</h3>
-                                        <span>Business Owner</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single_carousel">
-                                <div class="single_testmonial text-center">
-                                    <div class="quote">
-                                        <img src="img/svg_icon/quote.svg" alt="">
-                                    </div>
-                                    <p>
-                                        Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor sollicitudin.
-                                        Pellentesque id dolor tempor sapien feugiat ultrices.
-                                    </p>
-                                    <div class="testmonial_author">
-                                        <div class="thumb">
-                                            <img src="img/case/testmonial.png" alt="">
-                                        </div>
-                                        <h3>Robert Thomson</h3>
-                                        <span>Business Owner</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
-    <!-- /testimonial_area  -->
+    @Html.Sitecore().Rendering("{771BB9A6-AAAF-414B-BBDA-6CC550700364}")
+
+    @Html.Sitecore().Rendering("{C347304E-1E62-4498-97D6-AB38CC3C716F}")
     <!-- Estimate_area start  -->
-    <div class="Estimate_area overlay">
+    <!--<div class="Estimate_area overlay">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-5">
@@ -382,7 +181,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- Estimate_area end  -->
     <!-- contact_location  -->
     <div class="contact_location">
@@ -391,9 +190,8 @@
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="location_left">
                         <div class="logo">
-                            <a href="index.html">
-                                <img src="img/logo.png" alt="">
-                            </a>
+                            @Html.Sitecore().Field("Link", homeItem,
+                            new { text = @Html.Sitecore().Field("Logo", homeItem) })
                         </div>
                         <ul>
                             <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
@@ -405,19 +203,23 @@
                 </div>
                 <div class="col-xl-3 col-md-3">
                     <div class="single_location">
-                        <h3> <img src="img/icon/address.svg" alt=""> Location</h3>
+                        <h3>
+                            @Html.Sitecore().Field("Title", locationItem1)
+                            @Html.Sitecore().Field("Logo", locationItem1)
+                        </h3>
                         <p>
-                            600/D, Kings road, Green lane
-                            NewYork-2563
+                            @Html.Sitecore().Field("Address", locationItem1)
                         </p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-3">
                     <div class="single_location">
-                        <h3> <img src="img/icon/support.svg" alt=""> Location</h3>
+                        <h3>
+                            @Html.Sitecore().Field("Title", locationItem2)
+                            @Html.Sitecore().Field("Logo", locationItem2)
+                        </h3>
                         <p>
-                            +10 267 3563 4562 <br>
-                            support@logistico.com
+                            @Html.Sitecore().Field("Address", locationItem2)
                         </p>
                     </div>
                 </div>

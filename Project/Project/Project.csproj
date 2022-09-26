@@ -204,6 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +246,16 @@
     <Content Include="Views\Footer.cshtml" />
     <Content Include="Views\Footer_Navigation.cshtml" />
     <Content Include="Views\Social_Media.cshtml" />
+    <Content Include="Views\EstimatesForm.cshtml" />
+    <Content Include="Views\MainBanner.cshtml" />
+    <Content Include="Views\FeaturedServices.cshtml" />
+    <Content Include="Views\SafeSecureTagLine.cshtml" />
+    <Content Include="Views\Testimonial_Templates.cshtml" />
+    <Content Include="Views\Facts_Templates.cshtml" />
+    <Content Include="Views\About.cshtml" />
+    <Content Include="Views\ServicesSection.cshtml" />
+    <Content Include="Views\service_details.cshtml" />
+    <Content Include="Views\ServicesDescription.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

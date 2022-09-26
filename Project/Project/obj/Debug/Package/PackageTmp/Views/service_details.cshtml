@@ -1,0 +1,39 @@
+﻿@using Sitecore
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Data
+@using Sitecore.Data.Items
+
+@{
+    //Extract the current Db
+    Database currentDb = Sitecore.Context.Database;//Get the value of the Datasource
+    string datasource = RenderingContext.Current.Rendering.DataSource;//Get the datasource item
+    Item item = currentDb.GetItem(datasource);
+}
+
+@*service_details_start*@
+<div class="service_details_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="service_details_left">
+                    <h3>@item.Name</h3>
+                    <div class="nav nav-pills" id="v-pills-tab" role="tablist"
+                         aria-orientation="vertical">
+                        @foreach (Item childItem in item.GetChildren())
+                        {
+                            var URL = Sitecore.Links.LinkManager.GetItemUrl(childItem);
+                            <a class=" active" id="v-pills-home-tab" href="@URL"
+                               role="tab" aria-controls="v-pills-home">
+                                @Html.Sitecore().Field("Service Title", childItem)
+                            </a>}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8">
+                @Html.Sitecore().Placeholder("Service Description")
+            </div>
+        </div>
+    </div>
+</div>
+@*service_details_start*@ 

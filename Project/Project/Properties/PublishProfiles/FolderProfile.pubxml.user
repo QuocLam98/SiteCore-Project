@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <History>True|2022-09-22T11:57:50.0496581Z;True|2022-09-22T18:49:56.3793705+07:00;True|2022-09-22T18:34:52.9526667+07:00;True|2022-09-22T18:13:30.2472743+07:00;True|2022-09-22T18:11:58.3906976+07:00;True|2022-09-22T18:07:52.5653216+07:00;True|2022-09-22T18:06:10.9096561+07:00;True|2022-09-22T17:52:13.8189389+07:00;True|2022-09-22T17:51:13.6822677+07:00;True|2022-09-22T17:50:02.4234742+07:00;True|2022-09-22T17:41:05.4092447+07:00;True|2022-09-22T17:31:10.7311410+07:00;True|2022-09-22T16:01:34.1748841+07:00;True|2022-09-22T15:37:41.8516716+07:00;True|2022-09-22T15:34:57.6137259+07:00;True|2022-09-22T15:32:41.8653107+07:00;True|2022-09-22T15:31:21.0677143+07:00;True|2022-09-22T15:29:44.9554226+07:00;True|2022-09-22T15:24:00.8947420+07:00;False|2022-09-22T15:20:59.6782475+07:00;False|2022-09-22T13:50:14.1695945+07:00;False|2022-09-22T13:49:55.4759765+07:00;False|2022-09-21T18:11:17.9832076+07:00;False|2022-09-21T18:06:01.2556000+07:00;False|2022-09-21T18:05:43.9590662+07:00;False|2022-09-21T17:54:40.7490190+07:00;False|2022-09-21T17:53:56.5075389+07:00;</History>
-    <_PublishTargetUrl>C:\inetpub\wwwroot\storefront100.sc</_PublishTargetUrl>
+    <History>True|2022-09-26T10:34:57.6729671Z;True|2022-09-26T17:14:46.7615048+07:00;True|2022-09-26T16:51:12.6298158+07:00;True|2022-09-26T16:48:40.1703708+07:00;True|2022-09-26T16:43:43.3976330+07:00;False|2022-09-26T16:42:16.4894800+07:00;False|2022-09-26T15:10:16.5747297+07:00;True|2022-09-26T14:12:52.2458804+07:00;True|2022-09-26T14:10:00.6542314+07:00;True|2022-09-26T14:08:50.5870005+07:00;True|2022-09-26T14:07:26.1054790+07:00;True|2022-09-26T13:58:52.7862935+07:00;True|2022-09-26T10:08:27.4891397+07:00;True|2022-09-26T09:47:38.6674880+07:00;True|2022-09-23T17:18:41.9370679+07:00;True|2022-09-23T16:57:36.0516679+07:00;True|2022-09-23T16:54:23.4832884+07:00;True|2022-09-23T16:46:03.2004601+07:00;True|2022-09-23T15:57:34.7096242+07:00;True|2022-09-23T15:54:07.4160639+07:00;True|2022-09-23T14:59:49.5780640+07:00;True|2022-09-23T11:18:50.4102301+07:00;True|2022-09-23T11:16:04.0442289+07:00;True|2022-09-23T11:13:35.9285132+07:00;True|2022-09-23T10:05:26.1888917+07:00;True|2022-09-22T18:57:50.0496581+07:00;True|2022-09-22T18:49:56.3793705+07:00;True|2022-09-22T18:34:52.9526667+07:00;True|2022-09-22T18:13:30.2472743+07:00;True|2022-09-22T18:11:58.3906976+07:00;True|2022-09-22T18:07:52.5653216+07:00;True|2022-09-22T18:06:10.9096561+07:00;True|2022-09-22T17:52:13.8189389+07:00;True|2022-09-22T17:51:13.6822677+07:00;True|2022-09-22T17:50:02.4234742+07:00;True|2022-09-22T17:41:05.4092447+07:00;True|2022-09-22T17:31:10.7311410+07:00;True|2022-09-22T16:01:34.1748841+07:00;True|2022-09-22T15:37:41.8516716+07:00;True|2022-09-22T15:34:57.6137259+07:00;True|2022-09-22T15:32:41.8653107+07:00;True|2022-09-22T15:31:21.0677143+07:00;True|2022-09-22T15:29:44.9554226+07:00;True|2022-09-22T15:24:00.8947420+07:00;False|2022-09-22T15:20:59.6782475+07:00;False|2022-09-22T13:50:14.1695945+07:00;False|2022-09-22T13:49:55.4759765+07:00;False|2022-09-21T18:11:17.9832076+07:00;False|2022-09-21T18:06:01.2556000+07:00;False|2022-09-21T18:05:43.9590662+07:00;False|2022-09-21T17:54:40.7490190+07:00;False|2022-09-21T17:53:56.5075389+07:00;</History>
+    <_PublishTargetUrl>D:\wwwroot\storefront100.sc</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Assets/css/animate.css">
@@ -234,7 +234,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/21/2022 17:50:17</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>09/07/2020 04:52:58</publishTime>
+      <publishTime>07/09/2020 04:52:58</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/25/2012 18:48:56</publishTime>
@@ -243,10 +243,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/18/2021 03:03:36</publishTime>
     </File>
     <File Include="bin/Project.dll">
-      <publishTime>09/22/2022 18:49:56</publishTime>
+      <publishTime>09/26/2022 17:34:56</publishTime>
     </File>
     <File Include="bin/Project.pdb">
-      <publishTime>09/22/2022 18:49:56</publishTime>
+      <publishTime>09/26/2022 17:34:56</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>05/19/2020 08:51:56</publishTime>
@@ -288,10 +288,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/19/2020 08:40:20</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>05/12/2017 08:36:44</publishTime>
+      <publishTime>12/05/2017 08:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>05/12/2017 08:36:44</publishTime>
+      <publishTime>12/05/2017 08:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
       <publishTime>05/19/2020 08:40:20</publishTime>
@@ -374,6 +374,18 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Libraries/Sitecore.Mvc.dll">
       <publishTime>09/21/2022 17:47:50</publishTime>
     </File>
+    <File Include="Views/About.cshtml">
+      <publishTime>09/26/2022 14:26:02</publishTime>
+    </File>
+    <File Include="Views/EstimatesForm.cshtml">
+      <publishTime>09/23/2022 14:16:03</publishTime>
+    </File>
+    <File Include="Views/Facts_Templates.cshtml">
+      <publishTime>09/26/2022 10:04:46</publishTime>
+    </File>
+    <File Include="Views/FeaturedServices.cshtml">
+      <publishTime>09/26/2022 15:08:10</publishTime>
+    </File>
     <File Include="Views/Footer.cshtml">
       <publishTime>09/22/2022 18:46:31</publishTime>
     </File>
@@ -381,16 +393,40 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/22/2022 18:57:41</publishTime>
     </File>
     <File Include="Views/Header.cshtml">
-      <publishTime>09/22/2022 15:04:42</publishTime>
+      <publishTime>09/26/2022 16:50:53</publishTime>
     </File>
     <File Include="Views/Header_Navigation.cshtml">
-      <publishTime>09/22/2022 18:42:01</publishTime>
+      <publishTime>09/26/2022 16:49:59</publishTime>
     </File>
     <File Include="Views/Main.cshtml">
-      <publishTime>09/22/2022 18:33:18</publishTime>
+      <publishTime>09/26/2022 17:14:38</publishTime>
+    </File>
+    <File Include="Views/MainBackup.cshtml">
+      <publishTime>09/26/2022 16:42:02</publishTime>
+    </File>
+    <File Include="Views/MainBanner.cshtml">
+      <publishTime>09/23/2022 16:11:54</publishTime>
     </File>
     <File Include="Views/Navigation.cshtml">
       <publishTime>09/22/2022 18:13:24</publishTime>
+    </File>
+    <File Include="Views/SafeSecureTagLine.cshtml">
+      <publishTime>09/23/2022 17:18:23</publishTime>
+    </File>
+    <File Include="Views/ServicesDescription.cshtml">
+      <publishTime>09/26/2022 16:17:51</publishTime>
+    </File>
+    <File Include="Views/ServicesSection.cshtml">
+      <publishTime>09/26/2022 15:10:01</publishTime>
+    </File>
+    <File Include="Views/service_details.cshtml">
+      <publishTime>09/26/2022 16:17:20</publishTime>
+    </File>
+    <File Include="Views/Social_Media.cshtml">
+      <publishTime>09/22/2022 19:04:13</publishTime>
+    </File>
+    <File Include="Views/Testimonial_Templates.cshtml">
+      <publishTime>09/26/2022 09:43:46</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>09/21/2022 17:45:39</publishTime>
