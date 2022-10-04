@@ -46,19 +46,25 @@
         <![endif]-->
     <!-- header-start -->
     @Html.Sitecore().Rendering("{591644EF-9826-46EF-B32E-3F012614094F}")
+    <!-- header-end -->
 
     @Html.Sitecore().Placeholder("main")
-
-    @Html.Sitecore().Rendering("{9207353A-C5D8-41B0-BE90-EDFEE4AF00E8}")
-
-
-
+    <!-- slider_area_start -->
     @Html.Sitecore().Rendering("{33EB8F3F-F554-4DA0-90FA-25ABBE054C7D}")
-    <!-- header-end -->
-    <!-- contact_action_area  -->
-    @Html.Sitecore().Rendering("{EC44664D-1E7A-434B-B0FD-2A5A814D4EED}")
+    <!-- slider_area_end -->
+
+    @Html.Sitecore().Rendering("{2CE2C487-A605-4AE6-BCF8-3B6850831077}")
 
     @Html.Sitecore().Rendering("{607249F3-8846-4CF5-AD0E-9BB7E34EF8EE}")
+
+    @Html.Sitecore().Rendering("{E9D80C9D-0CBF-41EC-B782-B6BE485D6A73}")
+
+    <!-- Estimate_area start  -->
+    @Html.Sitecore().Rendering("{EB299C8B-66F7-4045-89FB-B244B146214B}")
+
+
+    <!-- Estimate_area end  -->
+    <!-- contact_action_area  -->
     <!-- /contact_action_area  -->
     <!-- chose_area  -->
     @*<div class="chose_area ">
@@ -92,96 +98,12 @@
             </div>
         </div>*@
     <!--/ chose_area  -->
-    @Html.Sitecore().Rendering("{E9D80C9D-0CBF-41EC-B782-B6BE485D6A73}")
 
     @Html.Sitecore().Rendering("{771BB9A6-AAAF-414B-BBDA-6CC550700364}")
 
     @Html.Sitecore().Rendering("{C347304E-1E62-4498-97D6-AB38CC3C716F}")
     <!-- Estimate_area start  -->
-    <!--<div class="Estimate_area overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-5">
-                    <div class="Estimate_info">
-                        <h3>Get free Estimate</h3>
-                        <p>
-                            Esteem spirit temper too say adieus who direct esteem. It look estee luckily or picture
-                            placing.
-                        </p>
-                        <a href="#" class="boxed-btn3">+10 672 457 356</a>
-                    </div>
-                </div>
-                <div class="col-xl-8 col-lg-8 col-md-7">
-                    <div class="form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="input_field">
-                                        <input type="text" placeholder="Your name">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="input_field">
-                                        <input type="email" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="input_field">
-                                        <select class="wide">
-                                            <option data-display="Product type">Product type</option>
-                                            <option value="1">small</option>
-                                            <option value="2">standard</option>
-                                            <option value="3">high</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="input_field">
-                                        <select class="wide">
-                                            <option data-display="Product size">Product size</option>
-                                            <option value="1">M</option>
-                                            <option value="2">L</option>
-                                            <option value="3">Xl</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="input_field">
-                                        <select class="wide">
-                                            <option data-display="City of departure">City of departure</option>
-                                            <option value="1">departure</option>
-                                            <option value="2">departure</option>
-                                            <option value="3">departure</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="input_field">
-                                        <select class="wide">
-                                            <option data-display="Delivery city">City of departure</option>
-                                            <option value="1">Delivery</option>
-                                            <option value="2">Delivery</option>
-                                            <option value="3">Delivery</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="input_field">
-                                        <textarea placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="input_field">
-                                        <button class="boxed-btn3-line" type="submit">Send Estimate</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
+    @Html.Sitecore().Rendering("{9207353A-C5D8-41B0-BE90-EDFEE4AF00E8}")
     <!-- Estimate_area end  -->
     <!-- contact_location  -->
     <div class="contact_location">
@@ -190,8 +112,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="location_left">
                         <div class="logo">
-                            @Html.Sitecore().Field("Link", homeItem,
-                            new { text = @Html.Sitecore().Field("Logo", homeItem) })
+                            @Html.Sitecore().Field("Image", homeItem)
                         </div>
                         <ul>
                             <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
@@ -201,28 +122,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_location">
-                        <h3>
-                            @Html.Sitecore().Field("Title", locationItem1)
-                            @Html.Sitecore().Field("Logo", locationItem1)
-                        </h3>
-                        <p>
-                            @Html.Sitecore().Field("Address", locationItem1)
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_location">
-                        <h3>
-                            @Html.Sitecore().Field("Title", locationItem2)
-                            @Html.Sitecore().Field("Logo", locationItem2)
-                        </h3>
-                        <p>
-                            @Html.Sitecore().Field("Address", locationItem2)
-                        </p>
-                    </div>
-                </div>
+                @Html.Sitecore().Rendering("{EC44664D-1E7A-434B-B0FD-2A5A814D4EED}")
             </div>
         </div>
     </div>

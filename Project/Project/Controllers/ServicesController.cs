@@ -20,7 +20,7 @@ namespace Project.Controllers
             Database currentDb = Sitecore.Context.Database;
             //Get the datasource
             string dataSourcePath = RenderingContext.Current.Rendering.DataSource;
-            Item dataSource = currentDb.GetItem(dataSourcePath);
+            Item dataSource = currentDb.GetItem("{6B597775-ECCF-4810-8EFE-A0E174B7C02A}");
             //Get the list of Navigation Items from the datasource
             List<Item> serviceItems = dataSource.GetChildren().ToList();
             //Pass the list of Items as a Model to the View

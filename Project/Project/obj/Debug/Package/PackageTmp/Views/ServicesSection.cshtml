@@ -29,13 +29,13 @@
                         var url = Sitecore.Links.LinkManager.GetItemUrl(item);
                         <div class="single_service">
                             <div class="thumb">
-                                @Html.Sitecore().Field("Thumbnail Image", item)
+                                @Html.Sitecore().Field("thumbnail Image", item)
                             </div>
                             <div class="service_info">
                                 <h3>
-                                    <a href="@url">@Html.Sitecore().Field("Service Title", item)</a>
+                                    <a href="@url">@Html.Sitecore().Field("Services Title", item)</a>
                                 </h3>
-                                <p>@Html.Sitecore().Field("Service Summary", item)</p>
+                                <p>@Html.Sitecore().Field("Services Summary", item)</p>
                             </div>
                         </div>
                     }

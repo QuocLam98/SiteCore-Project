@@ -6,8 +6,8 @@
 @{
     Database currentDb = Sitecore.Context.Database; //Extract the current Db
     Item homeItem = currentDb.GetItem("{3069770B-30C3-41A4-A68C-B5052B3C100E}"); //Get the item /sitecore/content/Home
-    Item contactItem1 = currentDb.GetItem("{ 590EE89D - 444E-40CE - 9193 - B78A2DC325E6}");
-    Item contactItem2 = currentDb.GetItem("{ 4DC1BCC5 - DB9A - 4019 - 9FAF - 5454A8E64E0B}");
+    Item contactItem1 = currentDb.GetItem("{9909414A-FBC7-4B9A-AEEE-0651B7E16CD6}");
+    Item contactItem2 = currentDb.GetItem("{0C8919F9-96E8-4B61-886E-71ACFE21CFA7}");
 }
 
 <header>
@@ -20,8 +20,7 @@
                             @*<a href="index.html">
                                     <img src="img/logo.png" alt="">
                                 </a>*@
-                            @Html.Sitecore().Field("Link", homeItem,
-                            new { text = @Html.Sitecore().Field("Image", homeItem) })
+                            @Html.Sitecore().Field("Image", homeItem)
                         </div>
                     </div>
                     <div class="col-xl-8 col-md-8">
@@ -34,7 +33,7 @@
                             </div>
 
                             <div class="book_btn d-none d-lg-block">
-                                <a class="boxed-btn3-line" href="#">@Sitecore.Globalization.Translate.Text("Quote", "Fallback Text")</a>
+                                <a class="boxed-btn3-line" href="#">@Sitecore.Globalization.Translate.Text("Quote", homeItem)</a>
                             </div>
                         </div>
                     </div>

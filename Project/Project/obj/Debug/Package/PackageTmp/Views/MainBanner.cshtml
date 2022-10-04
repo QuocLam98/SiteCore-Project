@@ -9,7 +9,7 @@
     Database currentDb = Sitecore.Context.Database;//Get the value of the Datasource
     string datasource = RenderingContext.Current.Rendering.DataSource;
     //Get the datasource item
-    Item item = currentDb.GetItem(datasource);
+    Item item = currentDb.GetItem("{E31322FA-3988-40EB-A2C2-7885F96A209E}");
 
 }
 
@@ -29,7 +29,7 @@
                         @Html.Sitecore().Field("Link", item,
                         new
                         {
-                        @class = "boxed - btn3",
+                        @class = "boxed-btn3",
                         text = @Html.Sitecore().Field("Text", item)
                         })
                     </div>

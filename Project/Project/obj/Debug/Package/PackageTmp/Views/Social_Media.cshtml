@@ -8,29 +8,32 @@
     Database currentDb = Sitecore.Context.Database; //Extract the current Db
                                                     //Get the item /sitecore/content/Home
     Item homeItem = currentDb.GetItem("{3069770B-30C3-41A4-A68C-B5052B3C100E}"); //Get the item /sitecore/content/Home
-    Item contactItem1 = currentDb.GetItem("{ 590EE89D - 444E-40CE - 9193 - B78A2DC325E6}");
-    Item contactItem2 = currentDb.GetItem("{ 4DC1BCC5 - DB9A - 4019 - 9FAF - 5454A8E64E0B}");
+    Item locationItem1 = currentDb.GetItem("{9C40B82B-7555-4AAD-835D-96868618A5EE}");
+    Item locationItem2 = currentDb.GetItem("{34766A09-EA84-4DE0-BA45-182E43BA9FA2}");
 }
 
 <!-- contact_action_area  -->
-<div class="contact_action_area">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-7 col-md-6">
-                <div class="action_heading">
-                    <h3>100% secure and safe</h3>
-                    <p>
-                        Esteem spirit temper too say adieus who direct esteem. It look estee luckily or picture
-                        placing drawing.
-                    </p>
-                </div>
-            </div>
-            <div class="col-xl-5 col-md-6">
-                <div class="call_add_action">
-                    <a href="#" class="boxed-btn3">+10 672 457 356</a>
-                </div>
-            </div>
-        </div>
+<div class="col-xl-3 col-md-3">
+    <div class="single_location">
+        <h3>
+            @Html.Sitecore().Field("Icon", locationItem1)
+            @Html.Sitecore().Field("Title", locationItem1)
+        </h3>
+        <p>
+            @Html.Sitecore().Field("Address", locationItem1)
+        </p>
     </div>
+</div>
+<div class="col-xl-3 col-md-3">
+    <div class="single_location">
+        <h3>
+            @Html.Sitecore().Field("Icon", locationItem2)
+            @Html.Sitecore().Field("Title", locationItem2)
+        </h3>
+        <p>
+            @Html.Sitecore().Field("Address", locationItem2)
+        </p>
+    </div>
+</div>
 </div>
 <!-- /contact_action_area  -->
